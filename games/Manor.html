@@ -60,7 +60,7 @@ Leaving poor Suuki to her sinister fate...
 (set: $lumiere to 1)]]]]
 
 [[North - The living room has more furniture-&gt;Salon3]]
-[[East - A TV is playing static in the corner-&gt;Salon2]]
+[[East - An old TV is playing static in the corner-&gt;Salon2]]
 [[West - Go back to the entrance -&gt;Entrée]] </tw-passagedata><tw-passagedata pid="6" name="Sortie" tags="" position="141,638" size="100,100">Chills course through your body, and you choose to leave the building. Who knows what horrors this manor hosts?
 (set: $finSortie to 1)
 [[END-&gt;Fins]] </tw-passagedata><tw-passagedata pid="7" name="Introduction" tags="" position="133,325" size="100,100">You&#39;re a renowned adventurer, looking for riches and challenges. You&#39;ve heard of an abandoned manor not that far from the inn you&#39;re staying at. You decide to go check it out, leaving the inn early in the morning, and after an hour of walking, you&#39;re finally here.
@@ -113,7 +113,7 @@ You obtain the Bloodstained Blade!(set: $couteau to 2)]]]
 [[North - The kitchen continues-&gt;Cuisine2]]
 [[South - The firewood storage might have something-&gt;Réserve]] </tw-passagedata><tw-passagedata pid="10" name="Cuisine2" tags="" position="1799,1098" size="100,100">The kitchen is offering a sad display, the smell of blood, and something much stronger fills your sinuses, you cover your nose to avoid having to smell anymore of this. 
 (if: $couteau is 0)[A silver knife set on the countertop catches your attention
-(click-replace: &quot;A silver knife&quot;)[(replace: &quot; set one the countertop catches your attention&quot; )[You obtained the Silver Knife! (set: $couteau to 1)]]]
+(click-replace: &quot;A silver knife&quot;)[(replace: &quot; set on the countertop catches your attention&quot; )[You obtained the Silver Knife! (set: $couteau to 1)]]]
 
 [[North - The pantry has a weird smell coming from it-&gt;GardeManger]]
 [[East - A wooden door is open-&gt;EscaliersRDCBas]]
@@ -234,7 +234,7 @@ Please finish what I wasn&#39;t able to do
 -James//(set:$memo to 1)
 
 [[Put the note down-&gt;CouloirSup6]] </tw-passagedata><tw-passagedata pid="40" name="CouloirSup7" tags="" position="2606,1197" size="100,100">The hallway is becoming filthier and filthier, chunks of flesh and organs scattered around the floor and walls, giving the end of the hallway a disgusting smell.(if: $planchesChambre is 0)[The master bedroom is blocked with several planks.(if:$hache is 1)[
-Break the barricade(click-replace:&quot;Break the barricade&quot;)[With your trusty iron axe, you swiftly destroy the planks blocking the master bedroom(set:$planchesChambre to 1)(replace:&quot;The master bedroom is blocked with several planks&quot;)[]]]](if:$planchesChambre is 1)[Chunks of wood are visible where the barricade once was.]
+Break the barricade(click-replace:&quot;Break the barricade&quot;)[With your trusty iron axe, you swiftly destroy the planks blocking the master bedroom(set:$planchesChambre to 1)(replace:&quot;The master bedroom is blocked with several planks&quot;)[]]]](if:$planchesChambre is 1)[ Chunks of wood are visible where the barricade once was.]
 
 (if:$planchesChambre is 1)[[[North - You can go inside the bedroom-&gt;Chambre1]]]
 [[South - Maybe that desk has interesting things-&gt;CouloirSup6]] 
@@ -242,7 +242,7 @@ Break the barricade(click-replace:&quot;Break the barricade&quot;)[With your tru
 
 [[North - Go check the bed-&gt;Chambre3]] 
 [[West - Maybe the furniture hides something-&gt;Chambre2]] 
-[[South - Leave the bedroom to go back in the hallway-&gt;CouloirSup7]] </tw-passagedata><tw-passagedata pid="42" name="Chambre2" tags="" position="2502,1094" size="100,100">Most of the furniture in the corner of the room is filled with blood, organs and other gross flesh chunks, inside the closet are pieces of human skin hanging from the coat racks. You immediatly recoil as you see this.(if:$fusible is 0)[A small fuse is placed between several chunks of intestine](click-replace:&quot;small fuse&quot;)[(replace:&quot;A &quot;)[](replace:&quot; is placed between several chunks of intestine&quot;)[]
+[[South - Leave the bedroom to go back in the hallway-&gt;CouloirSup7]] </tw-passagedata><tw-passagedata pid="42" name="Chambre2" tags="" position="2502,1094" size="100,100">Most of the furniture in the corner of the room is filled with blood, organs and other gross flesh chunks, inside the closet are pieces of human skin hanging from the coat racks. You immediatly recoil as you see this.(if:$fusible is 0)[ A small fuse is placed between several chunks of intestine](click-replace:&quot;small fuse&quot;)[(replace:&quot; A &quot;)[](replace:&quot; is placed between several chunks of intestine&quot;)[]
 You got the Fuse!(set:$fusible to 1)]
 
 [[North - There seems to be some kind of machine-&gt;Chambre4]] 
@@ -262,7 +262,7 @@ Remove the plank(click-replace:&quot;Remove the plank&quot;)[(replace:&quot;The 
 (if: $porteCave is 1)[[[West - Enter the workshop-&gt;Atelier4]]]
 [[East - The wine cellar has more bottles-&gt;CaveVin2]]
 [[South - The southern wall of the cellar seems a lot darker...-&gt;CaveVin3]]
-[[1F - Use the elevator-&gt;Chambre4]] </tw-passagedata><tw-passagedata pid="46" name="CouloirSombre2" tags="" position="1300,1199" size="100,100">The darkness envelops you in this part of the hallway, the flashlight barely feels like it&#39;s emitting any light. The deafening silence makes you extremely uncomfortable. A small bottle of rat poison is on the ground, open.
+[[1F - Use the elevator-&gt;Chambre4]] </tw-passagedata><tw-passagedata pid="46" name="CouloirSombre2" tags="" position="1300,1199" size="100,100">The darkness envelops you in this part of the hallway, the flashlight barely feels like it&#39;s emitting any light. The deafening silence makes you extremely uncomfortable. A small bottle of rodent killer is on the ground, open.
 (if:$pomme is 1)[You can poison the Apple(click-replace:&quot;poison&quot;)[(replace:&quot;You can &quot;)[](replace:&quot; the Apple&quot;)[You slather the Apple with rat poison...
 You obtained the Forbidden Fruit!(set:$pomme to 2)]]]
 
@@ -270,8 +270,8 @@ You obtained the Forbidden Fruit!(set:$pomme to 2)]]]
 [[South - Go back toward the staircase-&gt;CouloirSombre1]] </tw-passagedata><tw-passagedata pid="47" name="Atelier1" tags="" position="1300,1097" size="100,100">(if:$lumiere is 2)[You distinguish a fusebox with your flashlight, one of them seems to be missing.(if:$fusible is 1)[
 Place fuse(click-replace: &quot;Place fuse&quot;)[(replace: &quot;You distinguish a fusebox with your flashlight, one of them seems to be missing.&quot;)[As the many lamps of the workshop turn on, you get blinded for a bit. A strange noise can be heard from the room to the east...(set:$fusible to 2)(set:$lumiere to 3)]]]](if:$lumiere is 3)[The workshop is lit up, the sheer number of lights always blinds you when you try to look up]
 
-(if:$lumiere is 3)[[North - The work station seems bloody...-&gt;Atelier3]] 
-(if:$lumiere is 3)[[East - A lot of tools are stashed on a bench-&gt;Atelier2]]
+(if:$lumiere is 3)[[[North - The work station seems bloody...-&gt;Atelier3]]]
+(if:$lumiere is 3)[[[East - A lot of tools are stashed on a bench-&gt;Atelier2]]]
 [[South - Go back into the dark hallway-&gt;CouloirSombre2]] </tw-passagedata><tw-passagedata pid="48" name="Atelier2" tags="" position="1401,1096" size="100,100">Multiple arrays of tools can be found on a bench and on a part of the workbench. Some of them also seem to have recently been used...
 
 [[North - There is a door in the workshop-&gt;Atelier4]]
@@ -295,7 +295,7 @@ East - You can enter the wine cellar-&gt;CaveVin1]]]
 ]]]
 [[North - The wine cellar might be hiding secrets-&gt;CaveVin2]]
 [[West - The wall seems to extend towards the west-&gt;CaveVin3]] 
-(if: $cleCellule is 3)[[[South - Enter Suuki\&#39;s cell-&gt;Cellule1]]]</tw-passagedata><tw-passagedata pid="54" name="DialogueSuuki1" tags="" position="1892,590" size="100,100">You unlock the reinforced door and slowly open it. A headless young woman carrying one of the multiple heads you&#39;ve seen so far is sitting in the corner. The head she carries speaks:
+(if: $cleCellule is 3)[[[South - Enter Suuki&#39;s cell-&gt;Cellule1]]]</tw-passagedata><tw-passagedata pid="54" name="DialogueSuuki1" tags="" position="1892,590" size="100,100">You unlock the reinforced door and slowly open it. A headless young woman carrying one of the multiple heads you&#39;ve seen so far is sitting in the corner. The head she carries speaks:
 &quot;Who are you?&quot;(set:$cleCellule to 3)
 [[Tell her who you are-&gt;DialogueSuuki2]]
 (if: $couteau is 2 and $hache is 1 and $memo is 1)[[[Kill the demon-&gt;finTueur]]]</tw-passagedata><tw-passagedata pid="55" name="Cellule1" tags="" position="1604,1201" size="100,100">Suuki (if:$Suuki is 1)[is here](if: $Suuki is 2)[is brushing her hair](if: $Suuki is 3)[is playing with her hair](if: $Suuki is 4)[is looking around](if: $Suuki is 5)[is sitting on the ground](if: $Suuki is 6)[is removing splinters from her third head](if:$Suuki is 7)[is checking for more splinters](if:$Suuki is 8)[is brushing her fourth head](if: $Suuki is 9)[is playing with splinters](if: $Suuki is 10)[is healing her fifth head](if: $Suuki is 11)[looks at you, smiling](if: $Suuki is 12)[is trying to remember where her last head is](if: $Suuki is 13)[is sitting on the ground]
@@ -341,7 +341,7 @@ The Fairy of Eternal Void//
 
 [[The elevator will make this fast-&gt;Cellule1]] </tw-passagedata><tw-passagedata pid="67" name="DialogueSuuki8" tags="" position="2609,589" size="100,100">Suuki grabs both heads and cleans them of blood: &quot;Thank you for all you&#39;ve done, I&#39;m still missing one but I have no idea where it is hiding...&quot;(set:$Suuki to 12)
 
-[[Go look around for Suuki\&#39;s last head-&gt;Cellule1]] </tw-passagedata><tw-passagedata pid="68" name="DialogueSuuki9" tags="" position="2714,589" size="100,100">Suuki grabs her last head and starts levitating. After a flash of white light, she is whole again, a single head on her shoulders, where it should be. She has bright blue eyes and long red hair, as she looks at you, she asks: &quot;You&#39;ve freed me, I will give you whatever it is you seek...&quot;
+[[Go look around for Suuki&#39;s last head-&gt;Cellule1]] </tw-passagedata><tw-passagedata pid="68" name="DialogueSuuki9" tags="" position="2714,589" size="100,100">Suuki grabs her last head and starts levitating. After a flash of white light, she is whole again, a single head on her shoulders, where it should be. She has bright blue eyes and long red hair, as she looks at you, she asks: &quot;You&#39;ve freed me, I will give you whatever it is you seek...&quot;
 
 [[Glory-&gt;finGloire]]
 [[Riches-&gt;finRichesse]]
@@ -368,12 +368,12 @@ You nod and leave Suuki, going back to the entrance. Your quest is over.(set: $f
 [[END-&gt;Fins]] </tw-passagedata><tw-passagedata pid="74" name="finSuuki" tags="" position="137,1704" size="100,100">You hug the demoness, she blushes but hugs you back. She then looks at you and says: &quot;I guess we could go on a date or something, i-if you&#39;re up for it&quot;
 You nod and go towards the exit, holding her hand as you leave the manor.
 (set:$finSuuki to 1)
-[[END-&gt;Fins]] </tw-passagedata><tw-passagedata pid="75" name="North - Go towards the strange smell" tags="" position="2225,1450" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="76" name="East - Continue walking in the hallway" tags="" position="2375,1450" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="77" name="Credits" tags="" position="0,478" size="100,100">Aurielle - Wrote the original program on calculator and translated it in HTML, as well as changed the language from French to English.
+[[END-&gt;Fins]] </tw-passagedata><tw-passagedata pid="75" name="Credits" tags="" position="0,477" size="100,100">Aurielle - Wrote the original program on calculator and translated it in HTML, as well as changed the language from French to English.
 
 My old highschool friends from 5 years ago - For actually playing the original one on calculator and pushing me to do more.
 
 Quicksilvur - Proof-reading of the HTML version
-Lily - Proof-reading of the HTML version
+Crasseyon - Proof-reading of the HTML version
 
 You - For taking some time to actually play this, thank you
 
